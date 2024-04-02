@@ -1,7 +1,7 @@
 @extends('admin.layouts.master')
 @push('libs-css')
-    <link rel="stylesheet" href="{{ asset('/libs/select2/dist/css/select2.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('/libs/select2/dist/css/select2-bootstrap-5-theme.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('/public/libs/select2/dist/css/select2.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('/public/libs/select2/dist/css/select2-bootstrap-5-theme.min.css') }}">
 @endpush
 
 @section('content')

@@ -11,9 +11,7 @@
                             <div class="row row-0 gap-3 mb-3">
                                 <div class="col-3">
                                     <a href="{{ route('post.show', $post->slug) }}"><img src="{{ asset($post->image) }}"
-                                            class="w-100 h-100 object-cover card-
-                        img-start"
-                                            alt="Bài Post"></a>
+                                            class="w-100 h-100 object-cover card-img-start" alt="Bài Post"></a>
 
                                 </div>
 

@@ -108,8 +108,9 @@ class PostController extends Controller
         $this->service->delete($id);
         return to_route($this->route['index'])->with('success', __('notifySuccess'));
     }
+    
     public function actionMultipleRecode(Request $request)
-    {
+    {   
         $response = $this->service->actionMultipleRecode($request);
         if ($response) {
             return $response;

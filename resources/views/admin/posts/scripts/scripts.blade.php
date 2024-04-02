@@ -3,5 +3,6 @@
 <script>
     $(document).ready(function() {
         select2LoadData($('#tagRoute').val(), '.select2-bs5-ajax[name="tag_id[]"]');
+        select2LoadData($('#cateRoute').val(), '.select2-bs5-ajax[name="categories_id[]"]');
     });
 </script>
