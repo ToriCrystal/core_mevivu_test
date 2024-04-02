@@ -13,6 +13,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::controller(App\Http\Controllers\Blog\BlogController::class)
+    ->prefix('/')
+    ->as('post.')
+    ->group(function () {
+        Route::get('/', 'index')->name('index');
+        Route::get('/{slug}', 'showPost')->name('show');
+    });
